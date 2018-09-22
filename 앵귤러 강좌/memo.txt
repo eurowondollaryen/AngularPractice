@@ -1,0 +1,63 @@
+angular 커리큘럼 키워드
+1. angular technology stack
+2. typescript?
+3. angular components
+4. binding, events
+5. Dependency injection, service
+6. directives
+7. pipes
+8. forms
+9. routing
+10. http promises and observables
+11. testing(?)
+멀티언어 웹페이지 구현 방법 : jquery와 each를 이용해서 전체 dom 엘리먼트 값을 언어별로 갖고있다가 변경해준다.
+$.each(배열, function(index, each) {
+	여기서 index와 index에 따른 each값 사용하면된다.
+});
+
+
+
+git help
+git status
+------
+git init
+git config
+=> git config --global user.name "name"
+=> git config --global user.email "email@mail.com"
+
+git add
+
+git commit -m "comment"
+
+git remote add origin 링크
+=>git remote -v 로 확인
+
+git push
+
+git pull
+
+--------------------------------------------------
+angular 구성
+script.ts
+system.config.js :typescript를 javascript로 변환에 관여
+tsconfig.json : typescript의 설정같은 역할
+
+core-js : javascript 버전인 ES6을 지원하지 않는 브라우저에서도 ES6을 지원하게 해주는 모듈
+reflect : typescript의 annotation 기능을 사용가능하게 해주는 모듈
+SystemJS : 
+
+
+System.import('script.ts').catch(function(err) {
+ console.error(err);
+});
+script.ts를 로드하기위해 System.import를 사용한다
+(script 태그를 사용하지 않는 이유 : 브라우저가 인식을 못함
+
+
+2장- Typescript
+Angular에서는 Javascript가 아닌 Typescript를 사용한다.
+Typescript란 = ES6버전의 Javascript, 그보다 더 크다
+
+브라우저에서는 ES6버전의 Javascript까지만 지원하므로,
+Transpiler를 이용해서 Typescript => Javascript(ES6 OR ES5)로 변환해줘야한다.
+
